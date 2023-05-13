@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Task</title>
+    <style>
+        body {
+            background-color: rgb(3, 26, 26);
+        }
+
+        .form {
+            background-color: rgb(9, 95, 95);
+
+        }
+
+        .personal-data {
+            background-color: rgb(11, 131, 131);
+        }
+
+        .name {
+            padding: 30px 0;
+
+            background-color: rgb(14, 124, 124);
+        }
+
+        .First-filedset {
+            margin-bottom: 50px;
+            background-color: rgb(11, 131, 131);
+        }
+
+        .user-info {
+            margin-bottom: 50px;
+        }
+
+        .gender {
+            margin-bottom: 20px;
+        }
+
+        .ac-state {
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: rgb(32, 32, 32);
+            color: white;
+            border-radius: 10px;
+            width: 130px;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/" method="post" class="form">
+        <fieldset>
+            <legend class="personal-data">Personal Data</legend>
+            <fieldset class="First-filedset">
+                <legend class="name">Your Name</legend>
+                <table>
+                    <tr>
+                        <td><label for="Fname">First Name</label></td>
+                        <td> : <input type="text" name="Fname" id="Fname" placeholder="ex Abdalla"></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><label for="Fname">Last Name</label></td>
+                        <td> : <input type="text" name="Lname" id="Lname" placeholder="ex Saeed"></td>
+
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="user-info">
+                <table>
+                    <tr>
+                        <td><label for="phone">Your Phone</label></td>
+                        <td> : <input type="tel" name="phone" id="phone"></td>
+
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td> : <input type="email" name="Email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">Password</label></td>
+                        <td> : <input type="password" name="password" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pass">re-Password</label></td>
+                        <td> : <input type="password" name="password" id="pass"></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="gender">
+                <div>
+                    <input type="radio" name="gender" id="male" value="Male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <div class="ac-state">
+                <div>
+                    <input type="checkbox" name="Academic-state" id="student" value="student">
+                    <label for="student">Student</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Academic-state" id="Graduated" value="Graduated">
+                    <label for="Graduated">Graduated</label>
+                </div>
+            </div>
+
+            <div>
+                <label for="University">University:</label>
+
+                <select name="University" id="university">
+                    <option value="Arab acadmy">Arab acadmy</option>
+                    <option value="AUC">AUC</option>
+                    <option value="AOU">AOU</option>
+
+                </select>
+            </div>
+            <input type="submit" value="Submit" class="btn">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
